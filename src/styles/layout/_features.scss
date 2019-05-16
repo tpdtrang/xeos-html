@@ -1,5 +1,7 @@
 .features-container {
   padding: 130px 0;
+  background-color: $bg-wh;
+  border-bottom: 2px solid rgb(238, 236, 236);
   .p-title {
     margin-bottom: 70px;
     .heading-2 {
@@ -8,6 +10,7 @@
     }
   }
   .p-content {
+    padding: 0 20px;
     .item-features {
       padding: 0 40px;
       .icon {
