@@ -23,7 +23,7 @@
       .title {
         .heading-2 {
           @include rem("font-size", 60);
-          font-family: "Mariad Pro Regular";
+          font-family: $font-main;
           text-transform: capitalize;
           color: $cl-wh;
         }
