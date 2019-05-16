@@ -1,0 +1,42 @@
+.header-container {
+  padding: 10px 0;
+  .p-logo {
+    width: 200px;
+    .heading-1 {
+      @include rem("font-size", 60);
+      font-family: "Mariad Pro Regular";
+      font-weight: 600;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .p-menu {
+    text-align: right;
+    @include flexbox;
+    @include align-items(center);
+    @include justify-content(flex-end);
+    width: calc(100% - 200px);
+    .item-menu {
+      display: inline;
+      padding: 0px 20px;
+      .link-menu {
+        @include rem("font-size", 14);
+        color: $cl-bl;
+        text-transform: uppercase;
+        font-family: "Mariad Pro Regular";
+        &:hover {
+          color: #0b6196;
+        }
+      }
+      button {
+        padding: 5px 30px;
+        border-radius: 40px;
+        @include rem("font-size", 14);
+        border: 1px solid $cl-bl;
+        text-transform: uppercase;
+        background-color: rgba(0, 0, 0, 0.01);
+      }
+    }
+  }
+}
