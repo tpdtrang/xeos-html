@@ -10,29 +10,23 @@
   .p-content {
     .item-features {
       padding: 0 40px;
-      position: relative;
       .icon {
         width: 140px;
         height: 140px;
-        background-color: aqua;
         border-radius: 50%;
-        margin-left: 60px;
-        margin-bottom: 20px;
-        // position: relative;
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%,-50%);
         text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(center);
+        position: relative;
+        top: 0%;
+        left: 25%;
         i {
-          @include rem('font-size',60);
-          position: absolute;
+          @include rem("font-size", 60);
           color: $cl-wh;
-          // top: 50%;
-          // left: 50%;
-          // transform: translate(-50%,-50%);
+        }
+        &:hover {
+          cursor: pointer;
         }
       }
       .blue {
@@ -51,9 +45,9 @@
         @include rem("font-size", 24);
         font-family: "Mariad Pro Regular";
         transition: all 0.5s ease-in-out;
-        &:hover{
-            cursor: pointer;
-            color: $cl-blu;
+        &:hover {
+          cursor: pointer;
+          color: $cl-blu;
         }
       }
     }
