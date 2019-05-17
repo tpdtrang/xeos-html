@@ -1,0 +1,65 @@
+.features-container {
+  padding: 130px 0;
+  background-color: $bg-wh;
+  border-bottom: 2px solid rgb(238, 236, 236);
+  .p-title {
+    margin-bottom: 70px;
+    .heading-2 {
+      @include rem("font-size", 36);
+      font-family: $font-main;
+    }
+  }
+  .p-content {
+    padding: 0 20px;
+    .item-features {
+      padding: 0 40px;
+      .icon {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        text-align: center;
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(center);
+        position: relative;
+        top: 0%;
+        left: 25%;
+        margin-bottom: 20px;
+        i {
+          @include rem("font-size", 60);
+          color: $cl-wh;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .blue {
+        background-color: $cl-blu;
+      }
+      .orange {
+        background-color: $cl-or;
+      }
+      .pink {
+        background-color: $cl-pi;
+      }
+    }
+    .title {
+      margin-bottom: 20px;
+      .heading-3 {
+        @include rem("font-size", 24);
+        font-family: $font-main;
+        @include transition(all 0.5s ease-in-out);
+        &:hover {
+          cursor: pointer;
+          color: $cl-blu;
+        }
+      }
+    }
+    .text {
+      .text-content {
+        @include rem("font-size", 14);
+        font-family: $font-main;
+      }
+    }
+  }
+}
