@@ -2,7 +2,15 @@
 // Font
 // ----------------------------------------------------------------------
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&subset=vietnamese');
+@font-face{
+    font-family: "Mariad Pro Bold";
+    src: url('../fonts/Myriad\ Pro\ Bold\ SemiExtended.ttf');
 
+}
+@font-face{
+    font-family: "Mariad Pro Regular";
+    src: url('../fonts/Myriad\ Pro\ Regular.ttf');
+}
 // ----------------------------------------------------------------------
 // Base
 // ----------------------------------------------------------------------
@@ -19,6 +27,7 @@
 // ----------------------------------------------------------------------
 @import "layout/header";
 @import "layout/footer";
+@import "layout/wave";
 
 // ----------------------------------------------------------------------
 // Custom
