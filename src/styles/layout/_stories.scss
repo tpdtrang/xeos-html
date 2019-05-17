@@ -1,0 +1,54 @@
+.stories-container {
+  background-color: rgb(243, 239, 239);
+  padding: 80px 0;
+  .p-title {
+    margin-bottom: 70px;
+    .heading-2 {
+      @include rem("font-size", 36);
+      font-family: $font-main;
+      margin-bottom: 20px;
+    }
+    .title-content {
+      padding: 0 20%;
+      @include rem("font-size", 14);
+      font-family: $font-main;
+      color: $cl-cu;
+    }
+  }
+  .p-content {
+    border-top-right-radius: 10px;
+    padding: 0 20px;
+    .item-stories {
+      background-color: $bg-wh;
+      border-radius: 5px;
+      .video {
+        video {
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+        }
+      }
+
+      .text {
+        padding: 20px 20px;
+        .text-content {
+          @include rem("font-size", 14);
+          font-family: $font-main;
+          @include transition(all 0.5s ease-in-out);
+          &:hover {
+            color: $cl-menu;
+            cursor: pointer;
+          }
+        }
+        .text-bottom {
+          @include rem("font-size", 14);
+          font-family: $font-main;
+          color: $cl-menu;
+          text-transform: capitalize;
+          .sp-content {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
