@@ -1,25 +1,24 @@
 .customize-container {
   padding: 100px 0;
   border-top: 2px solid rgb(236, 235, 235);
-  background-color: #fff;
   .p-title {
     margin-bottom: 70px;
     text-align: center;
     .heading-2 {
       @include rem("font-size", 36);
-      font-family: "Mariad Pro Regular";
+      font-family: $font-main;
     }
   }
   .p-title {
     margin-bottom: 70px;
     .heading-2 {
       @include rem("font-size", 36);
-      font-family: "Mariad Pro Regular";
+      font-family: $font-main;
     }
   }
   .p-customize-left {
     .p-img{
-        width: 100%;
+        width: 85%;
     }
   }
   .p-customize-right {
@@ -31,9 +30,9 @@
         border-radius: 100%;
         background-color: $cl-or;
         text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(center);
         margin-top: 10px;
         i {
           @include rem("font-size", 24);
@@ -55,7 +54,7 @@
       .description {
         padding-right: 100px;
         .title {
-          margin-bottom: 10px;
+          margin-bottom: 8px;
           .heading-4 {
             @include rem("font-size", 24);
             font-family: $font-main;
