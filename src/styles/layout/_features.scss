@@ -6,7 +6,7 @@
     margin-bottom: 70px;
     .heading-2 {
       @include rem("font-size", 36);
-      font-family: "Mariad Pro Regular";
+      font-family: $font-main;
     }
   }
   .p-content {
@@ -24,6 +24,7 @@
         position: relative;
         top: 0%;
         left: 25%;
+        margin-bottom: 20px;
         i {
           @include rem("font-size", 60);
           color: $cl-wh;
@@ -46,8 +47,8 @@
       margin-bottom: 20px;
       .heading-3 {
         @include rem("font-size", 24);
-        font-family: "Mariad Pro Regular";
-        transition: all 0.5s ease-in-out;
+        font-family: $font-main;
+        @include transition(all 0.5s ease-in-out);
         &:hover {
           cursor: pointer;
           color: $cl-blu;
@@ -57,7 +58,7 @@
     .text {
       .text-content {
         @include rem("font-size", 14);
-        font-family: "Mariad Pro Regular";
+        font-family: $font-main;
       }
     }
   }
