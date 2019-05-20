@@ -24,11 +24,11 @@
       .popular {
         .pop {
           color: $cl-wh;
-          z-index: 1;
+          position: absolute;
           right: 15px;
           top: 13px;
-          position: absolute;
-          transform: rotate(45deg);
+          z-index: 1;
+          @include transform(rotate(#{45}deg));
           @include rem("font-size", 14);
         }
         &::after {
@@ -37,7 +37,7 @@
           top: 15px;
           right: -5px;
           width: 90px;
-          transform: rotate(45deg);
+          @include transform(rotate(#{45}deg));
           border-bottom: 20px solid rgba(53, 47, 47, 0.5);
           border-right: 20px solid transparent;
           border-left: 20px solid transparent;
