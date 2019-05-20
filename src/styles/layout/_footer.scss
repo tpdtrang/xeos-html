@@ -1,0 +1,104 @@
+.footer-container {
+  background-color: #293f54;
+  padding: 100px;
+  .p-title {
+    margin-bottom: 20px;
+    .heading-4 {
+      @include rem("font-size", 18);
+      color: $cl-wh;
+      text-transform: capitalize;
+      font-family: $font-main;
+    }
+  }
+  .p-link {
+    .item-link {
+      .link {
+        color: $cl-ft;
+        @include rem("font-size", 12);
+        text-transform: capitalize;
+        font-family: $font-main;
+      }
+    }
+  }
+  .p-contact {
+    .contact {
+      margin-bottom: 10px;
+      .text {
+        color: $cl-ft;
+        @include rem("font-size", 12);
+        font-family: $font-main;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .p-recent {
+    .recent {
+      margin-bottom: 10px;
+      .back {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+      }
+      .p-text {
+        .text {
+          color: $cl-ft;
+          @include rem("font-size", 12);
+          font-family: $font-main;
+        }
+        .sp-text {
+          color: $cl-ft;
+          @include rem("font-size", 12);
+          font-family: $font-main;
+          font-style: italic;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .p-news {
+    .news {
+      margin-bottom: 20px;
+      .text {
+        color: $cl-ft;
+        @include rem("font-size", 12);
+        font-family: $font-main;
+      }
+    }
+    .email {
+      position: relative;
+      margin-bottom: 10px;
+      input {
+        border: none;
+        outline: none;
+        text-align: center;
+        color: $cl-ft;
+        @include rem("font-size", 14);
+        font-family: $font-main;
+        padding: 5px 45px;
+        border-radius: 5px;
+      }
+      .fas {
+        position: absolute;
+        left: 8px;
+        top: 8px;
+        color: $cl-ft;
+      }
+    }
+    .btn {
+      padding: 5px 80px;
+      @include rem("font-size", 14);
+      font-family: $font-main;
+      text-transform: uppercase;
+      border: none;
+      color: $cl-wh;
+      background-color: #0b6196;
+      border-radius: 5px;
+      position: relative;
+    }
+  }
+}
