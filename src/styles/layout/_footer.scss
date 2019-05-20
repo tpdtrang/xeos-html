@@ -1,0 +1,82 @@
+.footer-container {
+  background-color: #293f54;
+  padding: 100px;
+  .p-title {
+    margin-bottom: 20px;
+    .heading-4 {
+      @include rem("font-size", 18);
+      color: $cl-wh;
+      text-transform: capitalize;
+      font-family: $font-main;
+    }
+  }
+  .p-link {
+    .item-link {
+      .link {
+        color: $cl-ft;
+        @include rem("font-size", 12);
+        text-transform: capitalize;
+        font-family: $font-main;
+      }
+    }
+  }
+  .p-contact {
+    .contact {
+      margin-bottom: 10px;
+      .text {
+        color: $cl-ft;
+        @include rem("font-size", 12);
+        font-family: $font-main;
+      }
+    }
+  }
+  .p-recent{
+    .back{
+      width: 100%;
+      background-size: 100% auto;
+      background-position: center;
+      height: 100% ;
+    }
+  }
+  .p-news {
+    .news {
+      margin-bottom: 20px;
+      .text {
+        color: $cl-ft;
+        @include rem("font-size", 12);
+        font-family: $font-main;
+      }
+    }
+    .email {
+      position: relative;
+      width: 70%;
+      input {
+        border: none;
+        outline: none;
+        text-align: center;
+        color: $cl-ft;
+        @include rem("font-size", 14);
+        font-family: $font-main;
+        padding: 5px 50px;
+        border-radius: 5px;
+      }
+      .fas {
+        position: absolute;
+        left: 8px;
+        top: 8px;
+        color: $cl-ft;
+      }
+    }
+    .btn{
+      button{
+        padding: 5px 70px;
+        @include rem("font-size", 14);
+        font-family: $font-main;
+        text-transform: uppercase;
+        border: none;
+        color: $cl-wh;
+        background-color: #0b6196;
+      }
+    }
+  }
+}
