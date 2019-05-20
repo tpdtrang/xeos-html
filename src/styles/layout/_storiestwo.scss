@@ -1,17 +1,134 @@
 .storiestwo-container {
+  padding: 100px 0;
+  background-color: $bg-sto;
+  .p-title {
+    margin-bottom: 70px;
+    .heading-2 {
+      @include rem("font-size", 36);
+      font-family: $font-main;
+      margin-bottom: 20px;
+      color: $cl-wh;
+    }
+    .title-content {
+      padding: 0 20%;
+      @include rem("font-size", 14);
+      font-family: $font-main;
+      color: $cl-wh;
+    }
+  }
   .p-content {
-      .item-storiestwo {
-        .stories-top{
-          background-color: aqua;
+    padding: 0 20px;
+    .item-storiestwo {
+      text-align: center;
+      border-radius: 10px;
+      .popular {
+        .pop {
+          color: $cl-wh;
+          z-index: 1;
+          right: 15px;
+          top: 13px;
+          position: absolute;
+          transform: rotate(45deg);
+          @include rem("font-size", 14);
         }
-        .stories-bottom{
-          .item{
-            p{
-              border-bottom: 1px dotted #999;
-            }
-            
+        &::after {
+          content: "";
+          position: absolute;
+          top: 15px;
+          right: -5px;
+          width: 90px;
+          transform: rotate(45deg);
+          border-bottom: 20px solid rgba(43, 37, 37, 0.5);
+          border-right: 20px solid transparent;
+          border-left: 20px solid transparent;
+        }
+      }
+      .stories-social {
+        text-align: right;
+        .item {
+          position: absolute;
+          top: 32%;
+          right: 0;
+          width: 90%;
+          margin-right: 15px;
+          .text {
+            @include rem("font-size", 14);
+            color: $cl-wh;
+            border-bottom: 1px dotted #999;
+            padding: 10px 0;
           }
         }
+      }
+      .stories-top {
+        background-color: $bg-blu;
+        padding: 20px 0;
+        .title {
+          .heading-5 {
+            @include rem("font-size", 14);
+            text-transform: uppercase;
+            color: $cl-wh;
+            font-family: $font-main;
+          }
+        }
+        .price {
+          .text-price {
+            @include rem("font-size", 70);
+            text-transform: uppercase;
+            color: $cl-wh;
+            font-family: $font-main;
+            .sp-price {
+              @include rem("font-size", 30);
+            }
+          }
+        }
+        .usd {
+          .usd-content {
+            @include rem("font-size", 14);
+            text-transform: uppercase;
+            color: $cl-wh;
+            font-family: $font-main;
+          }
+        }
+      }
+      .green {
+        background-color: $bg-it-sto;
+      }
+      .orange {
+        background-color: $bg-or;
+      }
+      .pink {
+        background-color: $bg-pink;
+      }
+      .stories-bottom {
+        background-color: $bg-wh;
+        .item {
+          .text {
+            @include rem("font-size", 14);
+            color: $cl-tx-sto;
+            border-bottom: 1px dotted #999;
+            padding: 10px 0;
+            .fa-check {
+              color: $cl-tick;
+              @include rem("font-size", 14);
+            }
+            .fa-times {
+              color: $cl-times;
+              @include rem("font-size", 14);
+            }
+          }
+          .btn {
+            .btn-start {
+              background-color: $bg-blu;
+              padding: 6px 50px;
+              border-radius: 10px;
+              border: none;
+              text-transform: uppercase;
+              color: $cl-wh;
+              @include rem("font-size", 14);
+            }
+          }
+        }
+      }
     }
   }
 }
