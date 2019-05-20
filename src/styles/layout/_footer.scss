@@ -28,15 +28,38 @@
         @include rem("font-size", 12);
         font-family: $font-main;
       }
+      &:hover{
+        cursor: pointer;
+      }
     }
   }
   .p-recent{
-    .back{
-      width: 100%;
-      background-size: 100% auto;
-      background-position: center;
-      height: 100% ;
+    .recent{
+      margin-bottom: 10px;
+      .back{
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        height: 100% ;
+      }
+      .p-text{
+        .text{
+          color: $cl-ft;
+          @include rem("font-size", 12);
+          font-family: $font-main;
+        }
+        .sp-text{
+          color: $cl-ft;
+          @include rem("font-size", 12);
+          font-family: $font-main;
+          font-style: italic;
+        }
+      }
+      &:hover{
+        cursor: pointer;
+      }
     }
+    
   }
   .p-news {
     .news {
@@ -49,7 +72,7 @@
     }
     .email {
       position: relative;
-      width: 70%;
+      margin-left: 14px;
       input {
         border: none;
         outline: none;
@@ -57,7 +80,7 @@
         color: $cl-ft;
         @include rem("font-size", 14);
         font-family: $font-main;
-        padding: 5px 50px;
+        padding: 5px 45px;
         border-radius: 5px;
       }
       .fas {
@@ -69,14 +92,16 @@
     }
     .btn{
       button{
-        padding: 5px 70px;
+        padding: 5px 80px;
         @include rem("font-size", 14);
         font-family: $font-main;
         text-transform: uppercase;
         border: none;
         color: $cl-wh;
         background-color: #0b6196;
+        border-radius: 5px;
+       
       }
-    }
+  }
   }
 }
