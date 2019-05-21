@@ -1,0 +1,32 @@
+.footerbottom-container {
+  padding: 10px 0;
+  background-color: $bg-ft-bt;
+  .p-logo {
+    .heading-2 {
+      color: $cl-ft;
+      @include rem("font-size", 45);
+      font-family: $font-main;
+    }
+  }
+  .p-icon {
+    padding-top: 20px;
+    .item-icon {
+      display: inline;
+      padding: 10px;
+      .link-icon {
+        color: $cl-ft;
+        @include rem("font-size", 15);
+        font-family: $font-main;
+      }
+    }
+  }
+  .copyrigth {
+    text-align: right;
+    padding-top: 20px;
+    .text {
+      color: $cl-ft;
+      @include rem("font-size", 12);
+      font-family: $font-main;
+    }
+  }
+}
